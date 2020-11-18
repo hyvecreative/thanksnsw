@@ -1,0 +1,44 @@
+.fm-container {
+		&.lf-header {background: transparent; border: none;}
+		}
+
+.polling-title {
+    background: #ddc700;
+    border-radius: 8px 8px 0 0;
+    padding: 4px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px)  { 	
+	
+#header {
+		&.lf-home {
+			.flexmenu.fm-lg {max-width: 100%;margin: 0 40px 0 10px;float: right;
+			
+					a {color: #ddc700; font-weight: bold; text-transform: uppercase; padding: 7px 15px;
+					&:hover {color: #073536; background-color: #ddc700; border-radius: 4px;}
+					}
+					li {
+						ul { border-top: none; margin-left: 5px;
+							li{padding-right: 0; padding-left: 0;}
+						}
+					}
+
+					li.current-menu-item {
+						a {color: #333; background-color: #ddc700; border-radius: 4px;
+							&:hover {color: #ddc700; background-color: transparent;}
+						}
+					}
+					.navicon {display: none;}
+			}
+		}
+
+	}
+
+#header.lf-home .flexmenu.fm-lg > ul > li {
+    padding: 7px;
+}
+	
+}

@@ -1,0 +1,6 @@
+**/.DS_Store
+wp-app
+.idea
+node_modules
+dist
+wp-content/uploads/gravity_forms
