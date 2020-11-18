@@ -1,4 +1,0 @@
-<!-- begin colRight -->
-
-
-<!-- end colRight -->

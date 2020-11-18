@@ -34,9 +34,9 @@ body.page-template-page-phish nav {display: none;}
 
 @media (min-width: 992px) {
 
-#header {
+/* #header {
 	padding: 15px 0 15px; height: 75px;
-}
+} */
 	
 }
 
@@ -362,7 +362,7 @@ ul#mymenu {
 
 
 h2 {
-	color: #2d7b75; /*#666;*/
+	color: #fff;
 	margin: 1em 0 0.5em;
     font-size: 2em; /* 24pt/16pt */
 	line-height: 1.1;
@@ -737,7 +737,7 @@ img.wp-smiley,
 }
 
 
-.hm-intro {background: #063844; padding: 20px 0; color:#fff;}
+.hm-intro {background: #1f2863; padding: 20px 0; color:#fff;}
 
 @media (min-width: 992px) {
 	.hm-intro {padding: 40px 0;}
