@@ -1,3 +1,9 @@
+<?php
+/*
+Template Name: front_page
+*/
+?>
+
 <?php get_header(); ?>
 
 <div class="container-fluid hm-intro">	

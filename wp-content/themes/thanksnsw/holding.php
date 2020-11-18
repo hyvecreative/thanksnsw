@@ -1,3 +1,9 @@
+<?php
+/*
+Template Name: holding
+*/
+?>
+
 <!DOCTYPE html>
 <html lang="en"><head >
 

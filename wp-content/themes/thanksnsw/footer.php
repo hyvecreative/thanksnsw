@@ -2,6 +2,9 @@
 
 <!-- begin footer -->
 
+<!-- end wrapper -->
+</div>
+
 <footer>
 
 <div class="container-fluid ftwraptop">
@@ -16,8 +19,7 @@
 
 </footer><!-- end footer -->
 
-<!-- end wrapper -->
-</div>
+
 
 
 
