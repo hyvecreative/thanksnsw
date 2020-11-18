@@ -1,9 +1,9 @@
-# Coaltracker- Wordpress theme
+# Thanks NSW - Wordpress theme
 
 #### Wordpress environment with Docker and Docker Compose
 
 Theme location:
-`` ./wp-content/themes/AMSRO2020 ``
+`` ./wp-content/themes/thanksnsw ``
 
 ## Setup using docker-compose
 
