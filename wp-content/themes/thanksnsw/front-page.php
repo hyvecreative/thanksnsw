@@ -6,7 +6,9 @@
 <div class="container">
 	
 <div class="row about-wrap text-center" style="max-width: 650px; margin-right: auto; margin-left: auto;">
-	<div class="col">
+	<div class="col text-center">
+
+		<img src="<?php bloginfo('template_directory'); ?>/images/icon-member-list.png" alt="AMSRO" />
 
 		<h2 style="color:#fff;">About AMSRO</h2>
 
