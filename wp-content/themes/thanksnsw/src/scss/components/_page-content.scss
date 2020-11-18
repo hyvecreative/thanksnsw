@@ -1,0 +1,93 @@
+.page-header-image { position: relative; max-height: 300px; overflow: hidden;
+	
+	img {width: 100%; height: auto;}
+	
+	h1 {font-size: 1.6rem; font-weight: 600;  position: absolute; color: #fff; left: 50%; 
+-webkit-transform: translateX(-50%);
+transform: translateX(-50%); bottom: 5%;}
+	
+}
+
+@media (min-width: 667px) {
+
+.page-header-image { position: relative; max-height: 300px; overflow: hidden;	
+	h1 {font-size: 2.5rem;}
+}
+}
+
+/* Site-wide structural elements */
+
+.sb-pgfeed > ul {
+    padding-left: 0;
+}
+
+.bCrumbs {
+	border-bottom: 1px dotted $grey_15;
+	font-size: .9rem;
+	color: $grey_15;
+}
+
+/* Member List page */
+
+@media (max-width: 539px) {
+.container {
+	&.member-title-wrap {padding-left: 30px; padding-right: 30px;}
+}
+}
+
+.row {
+	&.member-list{
+		
+		.member-thumb{ flex: 0 0 100%;	
+			img{padding: 4%; }
+		}
+		
+		.small-logo{
+			img{width: 70%;}
+		}
+	
+		.mem-list-item{display: flex; align-items: center; margin-top: 2%; margin-bottom: 2%;
+			&.reverse-bg{
+				background: $grey_10;
+			}
+		}
+	}
+}
+
+/* AMI */
+
+/* AMI sidebar */
+
+.colRight {
+	.ami-sb {padding: 12px; background-color: #339aad; border-radius: 6px;
+			h2{ color: #fff; margin-top: 8px; line-height: 1.1;}
+			img{max-width: 100%; height: auto; background-color: #fff;
+					&.img-pad {padding: 2%; max-width: 96%;}
+			}
+			p{color: #fff;}
+			ul{margin-bottom: 8px; list-style: outside disc none; margin-left: 12px;} 
+			li{ color: #fff;}
+			a{color: #e7e7e7;}
+			}	
+	.ami-but{margin-bottom: 20px;
+			a.actionbutred {
+					margin: 0 auto;
+					padding: 0;
+					text-align: center;
+					width: 220px;
+			}
+			}
+}
+
+/* pagination */
+
+.search-pagination {overflow: hidden; }
+
+.emm-paginate { margin: 1.5rem 0 1rem;
+	.emm-title {margin-right: .25rem;}
+	.emm-prev, .emm-next {margin: 0 5px;}
+	.emm-page {color: #fff; text-align: center; width: 30px; height: 30px; line-height: 30px; background-color: #0c5a6b; display: inline-block; border-radius: 50%; margin: 0 5px; 
+	&.emm-current {color: $grey_20; background-color: $yellow_5;}
+	}
+}
+
