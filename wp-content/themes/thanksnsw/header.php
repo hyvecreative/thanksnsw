@@ -11,6 +11,17 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="<?php bloginfo('template_directory'); ?>/images/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="<?php bloginfo('template_directory'); ?>/images/favicon-16x16.png">
 	<link rel="manifest" href="<?php bloginfo('template_directory'); ?>/site.webmanifest">
+
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PW5LXG5HRT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PW5LXG5HRT');
+</script>
     
         <?php
         $template_directory = get_bloginfo('template_url');
@@ -48,7 +59,6 @@
 	<![endif]-->   
 	
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-	
 
 </head>
     
