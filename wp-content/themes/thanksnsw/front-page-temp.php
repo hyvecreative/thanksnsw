@@ -3,8 +3,10 @@
 Template Name: front_page
 */
 ?>
-
-<?php get_header(); ?>
+<?php 
+	if (!defined('ABSPATH')) exit;
+	get_header(); 
+?>
 
 <div class="container-fluid hm-intro">	
 <div class="container">

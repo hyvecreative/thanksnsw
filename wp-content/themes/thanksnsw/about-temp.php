@@ -1,3 +1,8 @@
+<?php
+/*
+Template Name: about_temp
+*/
+?>
 <?php get_header(); ?>
 
 <!-- begin content -->
