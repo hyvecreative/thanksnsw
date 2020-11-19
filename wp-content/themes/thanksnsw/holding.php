@@ -58,7 +58,7 @@ Template Name: holding
 
 </head>
     
-<body <?php body_class(); ?>
+<body <?php body_class(); ?>>
 
 <div class="main-wrap">
 

@@ -1,5 +1,6 @@
-﻿<!DOCTYPE html>
-<html lang="en"><head >
+﻿
+<!DOCTYPE html>
+<html lang="en"><head>
 
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -37,10 +38,7 @@
 		wp_enqueue_script( 'flexmenu', $template_directory."/js/jquery.flexmenu.js", array('jquery'), null, true);
 		wp_enqueue_script( 'bootstrap', $template_directory."/bootstrap/js/bootstrap.min.js", array('jquery'), null, true);
 		wp_enqueue_script( 'scrollTo', $template_directory."/js/jquery.scrollTo.js", array('jquery'), null, true);
-		wp_enqueue_script( 'fancyboxeasing', $template_directory."/js/jquery.easing-1.3.pack.js", array('jquery'), null, true);
 		wp_enqueue_script( 'scroll', $template_directory."/js/scroll.js", array('jquery'), null, true);
-	    wp_enqueue_script( 'readmore', $template_directory."/js/readmore.js", array('jquery'), null, true);
-	    wp_enqueue_script( 'navtabs', $template_directory."/js/navtabs.js", array('jquery'), null, true);
 
 		?>
 
@@ -62,15 +60,13 @@
 
 </head>
     
-  <body <?php body_class(); ?>>
+<body <?php body_class(); ?>>
   
 <!-- begin wrapper -->
  <div id="wrapper" class="wrapperhome">
 
 <!-- begin header -->
-<div id="header" class="lo-shadow">
-        
-</div><!-- END Header -->
+
 
 
 

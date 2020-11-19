@@ -11,8 +11,8 @@ Template Name: front_page
 	
 <div class="row about-wrap text-center" style="max-width: 1000px; margin-right: auto; margin-left: auto;">
 
-	<img src="<?php bloginfo('template_directory'); ?>/images/NSW_renewables_superpower.jpg" alt="AMSRO" />
-</div>
+		<img src="<?php bloginfo('template_directory'); ?>/images/NSW_renewables_superpower.jpg" alt="Thank you for making NSW a renewables superpower" />
+	</div>
 
 <div class="row about-wrap text-center" style="max-width: 480px; margin-right: auto; margin-left: auto;">
 
