@@ -8,3 +8,21 @@
 	} 
 	
 }
+
+/* Supporters panel */
+
+.logo-wrap {padding: 10%; -ms-flex: 0 0 100%;
+    flex: 0 0 100%;}
+
+.logo-wrap{
+	&.logo-large {padding:10% 0;}
+}
+
+.logo-wrap.logo-small {padding: 20%;}
+
+.row .supporter-logo {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}

@@ -12,9 +12,10 @@ Template Name: front_page
 <div class="container">
 	
 <div class="row about-wrap text-center" style="max-width: 1000px; margin-right: auto; margin-left: auto;">
-
+<div class="col">
 		<img src="<?php bloginfo('template_directory'); ?>/images/NSW_renewables_superpower.jpg" alt="Thank you for making NSW a renewables superpower" />
 	</div>
+</div>
 
 <div class="row about-wrap text-center" style="max-width: 480px; margin-right: auto; margin-left: auto;">
 
@@ -40,27 +41,55 @@ Template Name: front_page
 		<a style="margin-right: 3%;" href="#"><i class="fab fa-facebook-square fa-3x"></i></a>
 		<a href="#"><i class="fab fa-twitter-square fa-3x"></i></a>	
 
+		<p><a href="#" class="btn">read the media statement button</a></p>
+
 	</div>
 
 </div>
 	
-<div class="row icons-wrap text-center" style="background: #fff; margin-top: 30px;">
-	<div class="col-sm-3">
-	<a href="/list-of-members/"><img src="<?php bloginfo('template_directory'); ?>/images/icon-member-list.png" alt="logo" /></a>
+<div class="row supporter-wrap text-center" style="background: #fff; margin-top: 30px;">
+		
+	 <?php if( have_rows('supporters') ): while ( have_rows('supporters') ) : the_row(); ?>
+		
+        <div class="col-xs-6 col-sm-3 supporter-logo" style="position: relative;">
+			
+			<div class="logo-wrap logo-large <?php the_sub_field('logo_size'); ?>">
 
-	</div>
-	<div class="col-sm-3">
-	<a href="/directory/"><img src="<?php bloginfo('template_directory'); ?>/images/icon-directory.png" alt="logo" /></a>
+                <?php
+                $image = get_sub_field('logo_file');
 
-	</div>
-	<div class="col-sm-3">
-	<a href="/why-join/"><img src="<?php bloginfo('template_directory'); ?>/images/icon-mship.png" alt="logo" /></a>
+                ?>
 
-	</div>
-	<div class="col-sm-3">
-	<a href="/resources-for-covid-19/"><img src="<?php bloginfo('template_directory'); ?>/images/icon-covid.png" alt="logo" /></a>
+                <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 
+		</div>
 	</div>
+			
+    <?php endwhile; else: endif; ?>
+
+
+</div>
+	
+	<div class="row supporter-wrap text-center" style="background: #fff; padding-bottom: 30px;">
+		
+	 <?php if( have_rows('supporters_small') ): while ( have_rows('supporters_small') ) : the_row(); ?>
+		
+        <div class="col-xs-4 col-sm-2 supporter-logo" style="position: relative;">
+			
+			<div class="logo-wrap <?php the_sub_field('logo_size'); ?>">
+
+                <?php
+                $image = get_sub_field('logo_file');
+
+                ?>
+
+                <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+
+		</div>
+	</div>
+    <?php endwhile; else: endif; ?>
+
+
 </div>
 	
 	
