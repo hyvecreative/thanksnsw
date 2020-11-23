@@ -3,8 +3,8 @@
 
 .hm-intro {padding: 20px 0; background: #1f2863; color: #fff;
 
-	p{
-		a {color: #fff;}
+	p {color: #fff;
+		a {}
 	} 
 	
 }
@@ -15,14 +15,29 @@
     flex: 0 0 100%;}
 
 .logo-wrap{
-	&.logo-large {padding:10% 0;}
+	&.logo-small {padding: 20%;}
+	&.logo-large {padding:10% 15%;
+		&.logo-small{padding:10% 25%}
 }
-
-.logo-wrap.logo-small {padding: 20%;}
 
 .row .supporter-logo {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
     align-items: center;
+}
+
+.jobs-image { text-align: center; bottom: 0;
+	img {max-width: 250px}
+}
+
+@media (min-width: 992px) {
+	.jobs-image { text-align: right; position: absolute; bottom:0; right: 0; z-index: 0;}	
+}
+
+@media (min-width: 1200px) {
+	.jobs-image { 
+	img {max-width: 400px}
+}
+	
 }
