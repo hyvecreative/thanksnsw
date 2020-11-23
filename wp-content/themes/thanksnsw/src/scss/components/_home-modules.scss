@@ -11,14 +11,10 @@
 
 /* Supporters panel */
 
-.logo-wrap {padding: 10%; -ms-flex: 0 0 100%;
+.logo-wrap {padding: 5% 15%; -ms-flex: 0 0 100%;
     flex: 0 0 100%;}
-
-.logo-wrap{
-	&.logo-small {padding: 20%;}
-	&.logo-large {padding:10% 15%;
-		&.logo-small{padding:10% 25%}
-}
+	
+.logo-wrap.logo-small {padding: 5% 20%;}
 
 .row .supporter-logo {
     display: -ms-flexbox;
@@ -37,7 +33,7 @@
 
 @media (min-width: 1200px) {
 	.jobs-image { 
-	img {max-width: 400px}
+	img {max-width: 350px}
 }
 	
 }

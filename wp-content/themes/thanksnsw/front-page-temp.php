@@ -17,6 +17,20 @@ Template Name: front_page
 	</div>
 </div>
 
+<div class="row">
+	<div class="col-12 social-links text-center" style="max-width: 480px; margin-right: auto; margin-left: auto; margin-bottom: 20px;">
+
+		<h3 style="color: #f7d706; font-size: 1.6rem; margin-bottom: 20px; padding-right: 10px; padding-left: 10px;"><?php the_field('social_title') ?></h2>
+
+		<a href="<?php the_field('facebook_url') ?>" style="color: #bbdaf6; margin-right: 3%;"><i class="fab fa-facebook-square fa-3x"></i></a>
+		<a href="<?php the_field('twitter_url') ?>" style="color: #bbdaf6;"><i class="fab fa-twitter-square fa-3x"></i></a>	
+
+		<p><a href="<?php the_field('social_button_link_url') ?>" class="btn"><?php the_field('social_button_link_text') ?></a></p>
+
+	</div>
+
+</div>
+
 <div class="row about-wrap text-center" style="max-width: 480px; margin-right: auto; margin-left: auto;">
 
 	<div class="col text-center" style="margin-bottom: 30px; position: relative; z-index: 1;">
@@ -31,56 +45,22 @@ Template Name: front_page
 		<?php endif; ?>	
 	
 	</div>
-</div>
 
-<div class="row">
-	<div class="col-12 social-links text-center" style="margin-bottom: 20px; position: relative; z-index: 1;">
-
-		<h2><?php the_field('social_title') ?></h2>
-
-		<a href="<?php the_field('facebook_url') ?>" style="color: #bbdaf6; margin-right: 3%;"><i class="fab fa-facebook-square fa-3x"></i></a>
-		<a href="<?php the_field('twitter_url') ?>" style="color: #bbdaf6;"><i class="fab fa-twitter-square fa-3x"></i></a>	
-
-		<p><a href="<?php the_field('social_button_link_url') ?>" class="btn"><?php the_field('social_button_link_text') ?></a></p>
-
-	</div>
-
-	<div class="col-12 jobs-image">
+		<div class="col-12 jobs-image">
 		<img src="<?php bloginfo('template_directory'); ?>/images/jobs.jpg" alt="More jobs in the renewables sector in NSW" />
 	</div>
-
+	
 </div>
+
+
 
 </div>
 
 <div class="container">
 	
-<div class="row supporter-wrap text-center" style="background: #fff; max-width: 1200px;">
+<div class="row supporter-wrap text-center" style="background: #fff; max-width: 1200px; padding-top: 20px; padding-bottom: 20px;">
 		
 	 <?php if( have_rows('supporters') ): while ( have_rows('supporters') ) : the_row(); ?>
-		
-        <div class="col-6 col-sm-4 col-md-3 supporter-logo" style="position: relative;">
-			
-			<div class="logo-wrap logo-large <?php the_sub_field('logo_size'); ?>">
-
-                <?php
-                $image = get_sub_field('logo_file');
-
-                ?>
-
-                <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-
-		</div>
-	</div>
-			
-    <?php endwhile; else: endif; ?>
-
-
-</div>
-	
-	<div class="row supporter-wrap text-center" style="background: #fff; padding-bottom: 30px; max-width: 1200px;">
-		
-	 <?php if( have_rows('supporters_small') ): while ( have_rows('supporters_small') ) : the_row(); ?>
 		
         <div class="col-4 col-sm-3 col-md-2 supporter-logo" style="position: relative;">
 			
@@ -95,6 +75,7 @@ Template Name: front_page
 
 		</div>
 	</div>
+			
     <?php endwhile; else: endif; ?>
 
 
